@@ -1,0 +1,11 @@
+Create a topic 
+kafka-topics --zookeeper 127.12.13.14:2181 --topic vishnu_topic --create --partitions 3 --replication-factor 2 
+
+(note: replication-factor cannot be more than number of avalible kafka brokers)
+
+list topics 
+kafka-topics --zookeeper 127.12.13.14:2181 --list
+
+discription of topic
+kafka-topics --zookeeper 127.12.13.14:2181 --topic vishnu_topic --describe 
+
