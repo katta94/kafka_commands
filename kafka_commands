@@ -9,3 +9,16 @@ kafka-topics --zookeeper 127.12.13.14:2181 --list
 discription of topic
 kafka-topics --zookeeper 127.12.13.14:2181 --topic vishnu_topic --describe 
 
+Send messages through kafka producer console
+kafka-console-producer --broker-list 127.0.0.1:9092 --topic vishnu_topoic 
+
+
+Consume message through kafka consumer console
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic vishnu_topic 
+
+kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic vishnu_topic --from-beginning (to see messages from session starting)
+
+
+
+
+
